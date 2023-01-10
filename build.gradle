@@ -13,13 +13,13 @@ repositories {
 
 dependencies {
     implementation("io.micronaut:micronaut-http-client")
-    implementation("io.micronaut:micronaut-jackson-databind")
     implementation("io.micronaut.groovy:micronaut-runtime-groovy")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("jakarta.annotation:jakarta.annotation-api")
     compileOnly("io.micronaut:micronaut-http-validation")
+    compileOnly("io.micronaut.serde:micronaut-serde-processor")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
-
 }
 
 
@@ -27,8 +27,8 @@ application {
     mainClass.set("wood.mike.Application")
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("17")
-    targetCompatibility = JavaVersion.toVersion("17")
+    sourceCompatibility = JavaVersion.toVersion("11")
+    targetCompatibility = JavaVersion.toVersion("11")
 }
 
 graalvmNative.toolchainDetection = false

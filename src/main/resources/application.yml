@@ -5,3 +5,26 @@ netty:
   default:
     allocator:
       max-order: 3
+
+team:
+  name: 'INEOS Grenadiers'
+  colour: 'Red and black'
+  riders: ['Geraint Thomas', 'Tom Pidcock']
+  team-admin:
+    manager: 'Dave Brailsford'
+    coach: 'Xabier Artetxe'
+    physiotherapist: 'Inaki Arrazia'
+
+grand-tour:
+  france:
+    start: '2023-07-01'
+    location: 'Bilbao'
+    distance: 182
+  italy:
+    start: '2023-05-06'
+    location: 'Trabocchi'
+    distance: 18
+  spain:
+    start: '2022-08-26'
+    location: 'Barcelona'
+    distance: 14
